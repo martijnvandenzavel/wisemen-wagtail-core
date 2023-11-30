@@ -1,0 +1,11 @@
+{% extends "wagtailadmin/404.html" %}
+{% load wagtailimages_tags wagtailsettings_tags %}
+{% load static %}
+
+{% block branding_logo %}
+    {% if settings.wisemen.SiteSettings.logo %}
+        <div style="box-sizing: border-box;margin: 0 15px;">
+            {% image settings.wisemen.SiteSettings.logo original format-webp as logo_image %}<img src="{{ logo_image.url }}" style="width: 200px;" alt="Dashboard">
+        </div>
+    {% endif %}
+{% endblock %}

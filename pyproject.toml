@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "wisemen-wagtail-core"
+version = "0.1.0"
+description = "A Wagtail/Django setup, enriched with Wisemen's most-used (third-party) helpers, tools and packages."
+authors = ["Tim van der Linden <tim.vanderlinden@appwise.be>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "wisemen" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "4.2.3"
+geocoder = "1.38.1"
+icalendar = "5.0.5"
+# Wagtail packages
+wagtail = "5.1.1"
+wagtail-seo = { git = "https://github.com/Timusan/wagtail-seo.git"} # Until they allow Wagtail 5.
+wagtail-localize = {git = "https://github.com/Timusan/wagtail-localize-release.git"} # Until the bug https://github.com/wagtail/wagtail-localize/issues/607 is fixed.
+wagtail-generic-chooser = "^0.5.1"
+wagtail-orderable = {git = "https://github.com/Timusan/wagtail-orderable.git"}
+wagtailcolumnblocks = { git ="https://github.com/Timusan/wagtailcolumnblocks.git"} # Until it is ported to Wagtail 4/5.
+# Django packages:
+django-rq = "^2.7.0"
+django-countries = "^7.5.1"
+django-cors-headers = "^3.14.0"
+django-robots = "^5.0.0"
+django-environ = "^0.10.0"
+django-db-logger = "^0.1.12"
+whitenoise = "^6.4.0"
+channels = {extras = ["daphne"], version = "^4.0.0"}
+# Django Rest Framework packages:
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+django_rest_passwordreset = "^1.3.0"
+django-allauth = "^0.54.0"
+dj-rest-auth = "^4.0.0"
+drf-spectacular = "^0.26.4"
+# Serving stack packages:
+gunicorn = "^20.1.0"
+uvicorn = "^0.20.0"
+# Others:
+sentry-sdk = "^1.10.1"
+django-q-sentry = "^0.1.6"
+lxml = "^4.9.1"
+django-storages = "^1.13.2"
+psycopg = {extras = ["binary"], version = "^3.1.9"}
+boto3 = "^1.28.7"
+django-redis = "^5.3.0"
+wagtailvideos = {git = "https://github.com/Timusan/wagtailvideos"}
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38', 'py39', 'py310']
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.github
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | build
+    | ci
+    | dist
+    | migrations
+    | testproject
+    | venv
+  )/
+)
+'''

@@ -1,0 +1,40 @@
+# Randoms
+*Thumbs.db
+*.txz
+*.tar.xz
+*.tgz
+*.tar.gz
+*.sqlite3
+*.sql
+
+# Python
+*.pyc
+/build/
+/docs/_build/
+__pycache__
+*.egg-info/
+pip-wheel-metadata/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Editors
+.vscode/
+.idea/
+*~
+
+# Development & testing
+.coverage
+htmlcov/
+junit/
+coverage.xml
+testproject*/
+.cache
+.pytest_cache
+testmedia*/
+teststatic*/
+media/

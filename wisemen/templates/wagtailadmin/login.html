@@ -1,0 +1,12 @@
+{% extends "wagtailadmin/login.html" %}
+{% load i18n wagtailimages_tags wagtailsettings_tags wagtailadmin_tags static wagtailcore_tags %}
+
+{% block branding_login %}{% translate "Sign in to" %} {{ site_name  }}{% endblock %}
+
+{% block branding_logo %}
+    {% if settings.wisemen.SiteSettings.logo %}
+        <div style="box-sizing: border-box;margin: 0 auto;text-align: center;">
+            {% image settings.wisemen.SiteSettings.logo original format-webp as logo_image %}<img src="{{ logo_image.url }}" style="width: auto;height: auto;max-height: 120px;max-width: 100%;margin-top:30px;text-align: center;" alt="Dashboard">
+        </div>
+    {% endif %}
+{% endblock %}

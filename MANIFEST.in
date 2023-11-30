@@ -1,0 +1,5 @@
+include LICENSE README.md
+graft wisemen
+global-exclude __pycache__
+global-exclude *.py[co]
+include settings/project_settings.py

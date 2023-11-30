@@ -1,0 +1,11 @@
+# Install wisemen from local directory.
+-e .
+
+# Requirements, in addition to wisemen, needed for CI runner.
+black
+codespell
+flake8
+pytest-cov
+pytest-django
+sphinx
+sphinx-wagtail-theme
