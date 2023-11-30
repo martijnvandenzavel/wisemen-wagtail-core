@@ -5,7 +5,7 @@ An installable wrapper around Wagtail with sensible defaults, most used packages
 After setting up your repository and initialising both your Virtualenv and your Poetry project, install via:
 
 ```shell
-poetry add git+https://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@github.com/Timusan/wisemen-wagtail-core.git@<desired-version-tag>
+poetry add git+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w@github.com/kenzo47/wisemen-wagtail-core.git@<desired-version-tag>
 ```
 
 Then initialize your site with:
