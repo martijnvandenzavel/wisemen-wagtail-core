@@ -2,7 +2,7 @@
 name = "wisemen-wagtail-core"
 version = "0.1.0"
 description = "A Wagtail/Django setup, enriched with Wisemen's most-used (third-party) helpers, tools and packages."
-authors = ["Tim van der Linden <tim.vanderlinden@appwise.be>"]
+authors = ["Kenzo Wijnants <kenzo.wijnants@wisemen.digital>", "Tim van der Linden <tim.vanderlinden@appwise.be>"]
 license = "MIT"
 readme = "README.md"
 packages = [
@@ -11,13 +11,13 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-Django = "4.2.3"
-geocoder = "1.38.1"
-icalendar = "5.0.5"
+Django = "^4.2.7"
+geocoder = "^1.38.1"
+icalendar = "^5.0.5"
 # Wagtail packages
-wagtail = "5.1.1"
-wagtail-seo = { git = "https://github.com/Timusan/wagtail-seo.git"} # Until they allow Wagtail 5.
-wagtail-localize = {git = "https://github.com/Timusan/wagtail-localize-release.git"} # Until the bug https://github.com/wagtail/wagtail-localize/issues/607 is fixed.
+wagtail = "^5.2.1"
+wagtail-seo = "^2.4.1"
+wagtail-localize = {git = "https://github.com/kenzo47/wagtail-localize"} # Until the bug https://github.com/wagtail/wagtail-localize/issues/607 is fixed.
 wagtail-generic-chooser = "^0.5.1"
 wagtail-orderable = {git = "https://github.com/Timusan/wagtail-orderable.git"}
 wagtailcolumnblocks = { git ="https://github.com/Timusan/wagtailcolumnblocks.git"} # Until it is ported to Wagtail 4/5.
