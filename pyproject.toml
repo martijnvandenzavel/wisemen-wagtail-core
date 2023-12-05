@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wisemen-wagtail-core"
-version = "0.1.0"
+version = "0.2.2"
 description = "A Wagtail/Django setup, enriched with Wisemen's most-used (third-party) helpers, tools and packages."
 authors = ["Kenzo Wijnants <kenzo.wijnants@wisemen.digital>", "Tim van der Linden <tim.vanderlinden@appwise.be>"]
 license = "MIT"
