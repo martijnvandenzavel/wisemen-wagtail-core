@@ -19,8 +19,8 @@ wagtail = "^5.2.1"
 wagtail-seo = "^2.4.1"
 wagtail-localize = {git = "https://github.com/kenzo47/wagtail-localize"} # Until the bug https://github.com/wagtail/wagtail-localize/issues/607 is fixed.
 wagtail-generic-chooser = "^0.5.1"
-wagtail-orderable = {git = "https://github.com/Timusan/wagtail-orderable.git"}
-wagtailcolumnblocks = { git ="https://github.com/Timusan/wagtailcolumnblocks.git"} # Until it is ported to Wagtail 4/5.
+wagtail-orderable = {git = "https://github.com/kenzo47/wagtail-orderable.git"}
+wagtailcolumnblocks = { git ="https://github.com/kenzo47/wagtailcolumnblocks.git"} # Until it is ported to Wagtail 4/5.
 # Django packages:
 django-rq = "^2.7.0"
 django-countries = "^7.5.1"
@@ -48,7 +48,7 @@ django-storages = "^1.13.2"
 psycopg = {extras = ["binary"], version = "^3.1.9"}
 boto3 = "^1.28.7"
 django-redis = "^5.3.0"
-wagtailvideos = {git = "https://github.com/Timusan/wagtailvideos"}
+wagtailvideos = {git = "https://github.com/kenzo47/wagtailvideos.git"}
 
 [tool.black]
 line-length = 100
