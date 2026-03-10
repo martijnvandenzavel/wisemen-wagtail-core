@@ -49,6 +49,7 @@ psycopg = {extras = ["binary"], version = "^3.1.9"}
 boto3 = "^1.28.7"
 django-redis = "^5.3.0"
 wagtailvideos = {git = "https://github.com/kenzo47/wagtailvideos.git"}
+pillow = "^10.3.0"
 
 [tool.black]
 line-length = 100
