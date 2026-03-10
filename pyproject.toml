@@ -17,7 +17,7 @@ icalendar = "^5.0.5"
 # Wagtail packages
 wagtail = "^5.2.1"
 wagtail-seo = "^2.4.1"
-wagtail-localize = {git = "https://github.com/kenzo47/wagtail-localize"} # Until the bug https://github.com/wagtail/wagtail-localize/issues/607 is fixed.
+wagtail-localize = "^1.9"
 wagtail-generic-chooser = "^0.5.1"
 wagtail-orderable = {git = "https://github.com/kenzo47/wagtail-orderable.git"}
 wagtailcolumnblocks = { git ="https://github.com/kenzo47/wagtailcolumnblocks.git"} # Until it is ported to Wagtail 4/5.
