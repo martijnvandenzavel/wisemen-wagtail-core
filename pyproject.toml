@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wisemen-wagtail-core"
-version = "0.2.4"
+version = "0.2.5"
 description = "A Wagtail/Django setup, enriched with Wisemen's most-used (third-party) helpers, tools and packages."
 authors = ["Kenzo Wijnants <kenzo.wijnants@wisemen.digital>", "Tim van der Linden <tim.vanderlinden@appwise.be>"]
 license = "MIT"
@@ -15,7 +15,7 @@ Django = "^4.2.29"
 geocoder = "^1.38.1"
 icalendar = "^5.0.5"
 # Wagtail packages
-wagtail = "^6.0"
+wagtail = "5.2.6"
 wagtail-seo = "^2.4.1"
 wagtail-localize = "^1.9"
 wagtail-generic-chooser = "^0.5.1"
@@ -49,7 +49,7 @@ psycopg = {extras = ["binary"], version = "^3.1.9"}
 boto3 = "^1.28.7"
 django-redis = "^5.3.0"
 wagtailvideos = {git = "https://github.com/kenzo47/wagtailvideos.git"}
-pillow = "12.1.1"
+pillow = "^10"
 
 [tool.black]
 line-length = 100
