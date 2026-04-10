@@ -90,6 +90,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
     "wisemen.middleware.csrf.DisableCSRF",  # Disable CSRF for API
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 TEMPLATES = [
